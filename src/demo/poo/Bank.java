@@ -27,7 +27,7 @@ public class Bank {
 		return returnValue;
 	}
 
-	private String getName() {
+	public String getName() {
 		return name;
 	}
 
