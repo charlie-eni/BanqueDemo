@@ -46,5 +46,7 @@ public class DemoBank {
 		clientDao.findAll().forEach(System.out::println);
 		
 		Bank.staticMethod();
+		
+		System.err.println("FATAL ERREUR !!!!");
 	}
 }
