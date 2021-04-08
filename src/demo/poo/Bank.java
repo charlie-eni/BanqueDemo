@@ -13,7 +13,7 @@ public class Bank {
 	public Bank() {
 	}
 
-	public Bank(String name, String city, String logo, long stockValue) {
+	public Bank(String name, String logo, long stockValue) {
 		super();
 		this.name = name;
 		this.city = city;
