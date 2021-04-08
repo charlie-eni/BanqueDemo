@@ -8,7 +8,7 @@ public class DemoBank {
 
 		System.out.println(banqueBnp.toString());
 
-		Bank banqueCic = new Bank("Cic", "Paris", "logo", 1234560);
+		Bank banqueCic = new Bank("Cic2", "Paris", "logo", 1234560);
 
 		System.out.println(banqueCic);
 		
