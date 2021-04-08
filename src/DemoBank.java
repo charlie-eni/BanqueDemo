@@ -48,5 +48,7 @@ public class DemoBank {
 		System.out.println("Don't use static method");
 		
 		Bank.staticMethod();
+		
+		System.err.println("FATAL ERREUR !!!!");
 	}
 }
