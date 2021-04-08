@@ -3,8 +3,7 @@ package demo.poo.dao.memory;
 import demo.poo.dao.ClientDaoInterface;
 import demo.poo.entity.Client;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class ClientDaoMemory implements ClientDaoInterface {
 
@@ -29,11 +28,22 @@ public class ClientDaoMemory implements ClientDaoInterface {
 
     @Override
     public Client findByName(String name) {
-        return clientMap.values().stream().filter(client -> client.getName().equals(name)).findFirst().orElseThrow();
+        return clientMap.values().stream().filter(client -> client.getName().equals(name)).findFirst().orElse(null);
     }
 
     @Override
     public void removeByName(String name) {
-
+        for (long i = 1; i <= clientMap.size(); i++) {
+            if (clientMap.get(i).getName().equals(name)) {
+                clientMap.remove(i);
+                break;
+            }
+        }
     }
+
+    @Override
+    public List<Client> findAll() {
+        return new ArrayList<>(clientMap.values());
+    }
+
 }

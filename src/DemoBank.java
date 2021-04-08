@@ -26,9 +26,19 @@ public class DemoBank {
 		Client charlie = new Client("Charlie");
 		clientDao.save(charlie);
 
-		Account account = new Account(charlie, banqueBnp);
+		Client greg = new Client("Greg");
+		clientDao.save(greg);
+
+		Account charlieAccount = new Account(charlie, banqueBnp);
+		Account gregAccount = new Account(greg, banquePostale);
 
 		System.out.println(clientDao.findByName("Charlie"));
+
+		System.out.println("Tous les client : ");
+		clientDao.findAll().forEach(System.out::println);
+		clientDao.removeByName("Greg");
+		System.out.println("Tous les client : ");
+		clientDao.findAll().forEach(System.out::println);
 		
 		Bank.staticMethod();
 	}
