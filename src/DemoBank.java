@@ -44,6 +44,8 @@ public class DemoBank {
 		clientDao.removeByName("Greg");
 		System.out.println("Tous les client : ");
 		clientDao.findAll().forEach(System.out::println);
+
+		System.out.println("Don't use static method");
 		
 		Bank.staticMethod();
 	}
