@@ -10,15 +10,15 @@ public class Bank {
 	private long stockValue;
 
 	// constructor1
-	public Bank() {
+	public Bank(String name) {
+		this.name = name;
 	}
 
-	public Bank(String name, String city, String logo, long stockValue) {
+	public Bank(String name, String city, String logo) {
 		super();
 		this.name = name;
 		this.city = city;
 		this.logo = logo;
-		this.stockValue = stockValue;
 	}
 
 	public String getInfos() {
