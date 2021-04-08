@@ -21,6 +21,9 @@ public class DemoBank {
 		Bank banquePostale = new Bank("Poste", "logo", 1234560);
 		bankDao.save(banquePostale);
 
+		Bank banqueDeHacker = new Bank("Hacking", "logo", 1234560);
+		bankDao.save(banquePostale);
+
 		System.out.println(banquePostale);
 
 		Client charlie = new Client("Charlie");
@@ -29,7 +32,7 @@ public class DemoBank {
 		Client greg = new Client("Greg");
 		clientDao.save(greg);
 
-		Account charlieAccount = new Account(charlie, banqueBnp);
+		Account charlieAccount = new Account(charlie, banqueDeHacker);
 		Account gregAccount = new Account(greg, banquePostale);
 
 		System.out.println(clientDao.findByName("Charlie"));
