@@ -1,6 +1,6 @@
 package demo.poo.dao.memory;
 
-import demo.poo.Bank;
+import demo.poo.entity.Bank;
 import demo.poo.dao.BankDaoInterface;
 
 import java.util.ArrayList;

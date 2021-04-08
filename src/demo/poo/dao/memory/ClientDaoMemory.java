@@ -29,7 +29,7 @@ public class ClientDaoMemory implements ClientDaoInterface {
 
     @Override
     public Client findByName(String name) {
-        return null;
+        return clientMap.values().stream().filter(client -> client.getName().equals(name)).findFirst().orElseThrow();
     }
 
     @Override

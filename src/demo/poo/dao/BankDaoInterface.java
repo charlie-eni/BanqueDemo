@@ -1,6 +1,6 @@
 package demo.poo.dao;
 
-import demo.poo.Bank;
+import demo.poo.entity.Bank;
 
 public interface BankDaoInterface {
 

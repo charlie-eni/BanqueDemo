@@ -1,6 +1,6 @@
 
 
-package demo.poo;
+package demo.poo.entity;
 
 public class Bank {
 
