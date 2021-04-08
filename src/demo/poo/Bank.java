@@ -14,7 +14,7 @@ public class Bank {
 		this.name = name;
 	}
 
-	public Bank(String name, String city, String logo) {
+	public Bank(String name, String logo, long stockValue) {
 		super();
 		this.name = name;
 		this.city = city;
