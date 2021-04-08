@@ -12,7 +12,7 @@ public class DemoBank {
 
 		BankDaoInterface bankDao = new BankDaoMemory();
 		ClientDaoInterface clientDao = new ClientDaoMemory();
-
+//test
 		Bank banqueBnp = new Bank("bnp", "logo", 123456);
 		bankDao.save(banqueBnp);
 
