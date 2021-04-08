@@ -31,31 +31,31 @@ public class Bank {
 		return name;
 	}
 
-	private void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	private String getCity() {
+	public String getCity() {
 		return city;
 	}
 
-	private void setCity(String city) {
+	public void setCity(String city) {
 		this.city = city;
 	}
 
-	private String getLogo() {
+	public String getLogo() {
 		return logo;
 	}
 
-	private void setLogo(String logo) {
+	public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
-	private long getStockValue() {
+	public long getStockValue() {
 		return stockValue;
 	}
 
-	private void setStockValue(long stockValue) {
+	public void setStockValue(long stockValue) {
 		this.stockValue = stockValue;
 	}
 
