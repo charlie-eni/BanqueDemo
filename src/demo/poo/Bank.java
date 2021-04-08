@@ -17,7 +17,6 @@ public class Bank {
 	public Bank(String name, String logo, long stockValue) {
 		super();
 		this.name = name;
-		this.city = city;
 		this.logo = logo;
 	}
 

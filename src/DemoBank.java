@@ -8,9 +8,9 @@ public class DemoBank {
 
 		System.out.println(banqueBnp.toString());
 
-		Bank banqueCic = new Bank("Cic", "logo", 1234560);
+		Bank banquePostale = new Bank("Poste", "logo", 1234560);
 
-		System.out.println(banqueCic);
+		System.out.println(banquePostale);
 		
 		Bank.staticMethod();
 	}
