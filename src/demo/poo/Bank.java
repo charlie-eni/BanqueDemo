@@ -65,6 +65,6 @@ public class Bank {
 	}
 	
 	public static void staticMethod() {
-		System.out.println("hey");
+		System.out.println("hey mec");
 	}
 }
